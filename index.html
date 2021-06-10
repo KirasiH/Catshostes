@@ -26,6 +26,7 @@
 		
 	</head>
 	<body>
+		<div class="white"></div>
 		<header>
 			<div class="logo"><img src="images/logo.png" alt="логотип"></div>
 			<nav>
@@ -58,7 +59,7 @@
 			<h1>Котейка</h1>
 			<h2>Уютная гостиница для котов и кошек</h2>
 			<div class="button-reserve1">
-				<a href="catalog.html">Забронировать</a>
+				<a href="#">Забронировать</a>
 				<img src="images/paw.png" alt="Забронировать">
 			</div>
 		</div>
@@ -221,8 +222,43 @@
 			</div>
 		</footer>
 		
-		
+		<div class="pop-up">
+			<div class="pop-up_content">
+				<h3>Бронировать</h3>
+				<form action="#" method="post">
+				<div class="row">
+					<label for="name">Ваше имя</label>
+					<input type="text" id="name">
+				</div>
+				<div class="row">
+					<label for="pet_name">Имя питомца</label>
+					<input type="text" id=pet_name">			
+				</div>
+				<div class="row">
+					<label for="tel">телефон</label>
+					<input type="tel" id="tel">
+				</div>
+				<div class="row">
+					<label for="mail">E-mail</label>
+					<input type="text" id="mail">
+				</div>
+				<div class="date">
+					<span>Дата заезда</span> <label for="from">с</label> <input type="date" placeholder="26.01.22" id="from"> <label for="till">по</label> <input type="date" placeholder="26.01.22" id="till">
+				</div>
+					<div class="button-reserve2">
+						<a href="#">Подать заявку</a>
+						<img src="images/paw2.png" alt="Забронировать">
+					</div>
+				</form>
+				<div class="close-button">
+					<img src="images/close.png" alt="закрыть">
+				</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="scripts/owlcarousel/owl.carousel.min.js"></script>
+		<script src="scripts/popup.js"></script>
 		<script>
 		let w = window.innerWidth;
 
@@ -266,9 +302,3 @@
 		</script>
 	</body>
 </html>
-
-
-
-
-
-
